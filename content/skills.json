@@ -1,0 +1,14 @@
+{
+  "technical": [
+    { "name": "Python", "level": 3, "category": "Languages" },
+    { "name": "JavaScript / TypeScript", "level": 2, "category": "Languages" },
+    { "name": "HTML & CSS", "level": 3, "category": "Web" },
+    { "name": "React / Next.js", "level": 2, "category": "Web" },
+    { "name": "SQL", "level": 2, "category": "Data" },
+    { "name": "Google Cloud Run", "level": 1, "category": "Cloud" }
+  ],
+  "tools": {
+    "known": ["Git", "GitHub", "VS Code", "Poetry", "Linux / WSL"],
+    "learning": ["Docker", "Google Cloud", "Firestore", "Tailwind CSS"]
+  }
+}

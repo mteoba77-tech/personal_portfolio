@@ -1,0 +1,31 @@
+# Stack requirements for this portfolio app.
+#
+# This is a Node.js / Next.js app, so packages are actually installed from
+# package.json + package-lock.json with `npm install` — NOT with pip.
+# This file documents the exact stack and versions in one place.
+# The Dockerfile makes Cloud Run build with Node, so this file is not used
+# to build the container.
+
+# Runtime
+node==22 (LTS)
+
+# Runtime dependencies
+next==15.5.29
+react==19.3.1
+react-dom==19.3.1
+framer-motion==14.10.1
+lucide-react==1.70.0
+@google-cloud/firestore==9.4.0
+nodemailer==10.4.0
+
+# Development / build dependencies
+tailwindcss==4.3.5
+@tailwindcss/postcss==4.3.5
+typescript==5.9.3
+@types/node==26.6.6
+@types/react==19.3.0
+@types/react-dom==19.3.0
+@types/nodemailer==8.0.2
+eslint==9.39.5
+eslint-config-next==15.5.29
+@eslint/eslintrc==3.3.7

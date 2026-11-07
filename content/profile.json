@@ -1,0 +1,33 @@
+{
+  "name": "Your Name",
+  "title": "Your Current Job Title",
+  "company": "Your Company",
+  "location": "City, State",
+  "photo": "/images/profile.svg",
+  "bio": "A short introduction about who you are, what you do, and what drives you. Edit this in content/profile.json or on the admin page.",
+  "email": "mteoba77@yahoo.com",
+  "linkedin": "https://www.linkedin.com/in/your-profile",
+  "github": "https://github.com/mteoba77-tech",
+  "work": [
+    {
+      "role": "Your Current Job Title",
+      "organization": "Your Company",
+      "period": "2023 – Present",
+      "details": "Key responsibilities and accomplishments."
+    },
+    {
+      "role": "Previous Role",
+      "organization": "Previous Company",
+      "period": "2019 – 2023",
+      "details": "Key responsibilities and accomplishments."
+    }
+  ],
+  "education": [
+    {
+      "role": "Degree or Certificate",
+      "organization": "School Name",
+      "period": "2024 – Present",
+      "details": "Focus areas, honors, or relevant coursework."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+/* Caterpillar-inspired palette: one place to change the whole theme. */
+@theme {
+  --color-cat-yellow: #ffcd11;
+  --color-cat-yellow-dark: #e0b400;
+  --color-cat-black: #0a0a0a;
+  --color-cat-charcoal: #171717;
+  --color-cat-steel: #262626;
+  --color-cat-line: #3a3a3a;
+  --color-cat-gray: #a3a3a3;
+
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-display: var(--font-oswald), Impact, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-cat-black text-neutral-100 font-sans antialiased;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-display uppercase tracking-wide;
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-cat-yellow;
+  }
+}
+
+/* Base button, reused by the button variants below. */
+@utility btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-lg px-5 py-2.5 font-semibold transition-colors disabled:opacity-50;
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
+  }
+  .hazard-stripe {
+    background: repeating-linear-gradient(
+      -45deg,
+      var(--color-cat-yellow) 0 14px,
+      var(--color-cat-black) 14px 28px
+    );
+  }
+  .card {
+    @apply rounded-xl border border-cat-line bg-cat-charcoal;
+  }
+  .btn-primary {
+    @apply btn bg-cat-yellow text-cat-black hover:bg-cat-yellow-dark;
+  }
+  .btn-outline {
+    @apply btn border-2 border-cat-yellow text-cat-yellow hover:bg-cat-yellow hover:text-cat-black;
+  }
+  .btn-ghost {
+    @apply btn text-cat-gray hover:text-cat-yellow;
+  }
+  .chip {
+    @apply inline-block rounded-full border border-cat-line bg-cat-steel px-3 py-1 text-xs font-medium text-neutral-200;
+  }
+  .label {
+    @apply mb-1 block text-sm font-semibold text-neutral-200;
+  }
+  .input {
+    @apply w-full rounded-lg border border-cat-line bg-cat-black px-3 py-2 text-neutral-100 placeholder:text-neutral-500 focus:border-cat-yellow focus:outline-none;
+  }
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "id": "personal_portfolio",
+    "type": "project",
+    "title": "Personal Portfolio",
+    "description": "This multi-page portfolio site with a password-protected admin editor, contact form, and Cloud Run deployment.",
+    "tech": ["Next.js", "Tailwind CSS", "Firestore", "Google Cloud Run"],
+    "links": [{ "label": "GitHub", "url": "https://github.com/mteoba77-tech" }],
+    "images": []
+  },
+  {
+    "id": "hello_api",
+    "type": "project",
+    "title": "Hello API",
+    "description": "A small REST API built to practice routing, request handling, and testing.",
+    "tech": ["Python", "Poetry", "Git"],
+    "links": [{ "label": "GitHub", "url": "https://github.com/mteoba77-tech" }],
+    "images": []
+  },
+  {
+    "id": "example_award",
+    "type": "award",
+    "title": "Example Award",
+    "description": "Describe the award, who granted it, and why you received it.",
+    "tech": ["Leadership", "Teamwork"],
+    "links": [],
+    "images": []
+  }
+]
