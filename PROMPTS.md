@@ -62,3 +62,11 @@ I want the photo for the homepage stored in the program or somewhere it can be a
 ## 2026-11-08 02:15 UTC
 
 I added the profile.jkpg update the readme file
+
+## 2026-11-08 02:40 UTC
+
+My picture is not showing in the Homepage
+
+## 2026-11-08 05:20 UTC
+
+I added 3 pictures for the Showcase Page. I need to create a branch and a pull request to github
