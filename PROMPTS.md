@@ -30,3 +30,19 @@ help me fix this: (pasted output of `git add .` / `git commit` / `git push -u or
 ## 2026-11-08 00:30 UTC
 
 my App gets rhis error when deploying from google cloud gcloud run services update personal-portfolio --memory=1Gi --region=us-west1
+
+## 2026-11-08 01:10 UTC
+
+I still can not deploy this through google coloud
+
+## 2026-11-08 01:25 UTC
+
+i need to create a branch then make changes then merge the changes to portfolio_app every time I commit
+
+## 2026-11-08 01:30 UTC
+
+what are steps 3-5
+
+## 2026-11-08 01:35 UTC
+
+(pasted: nano editor open on .git/COMMIT_EDITMSG for branch fix_cloud_build_deploy)

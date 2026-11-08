@@ -1,0 +1,31 @@
+# Cloud Build: build the Dockerfile image, push it, and deploy it to Cloud Run.
+# Point the GitHub trigger at this file (Configuration: Cloud Build configuration file).
+steps:
+  - id: build
+    name: gcr.io/cloud-builders/docker
+    args:
+      - build
+      - -t
+      - us-west1-docker.pkg.dev/$PROJECT_ID/cloud-run-source-deploy/$REPO_NAME/personal-portfolio:$COMMIT_SHA
+      - .
+  - id: push
+    name: gcr.io/cloud-builders/docker
+    args:
+      - push
+      - us-west1-docker.pkg.dev/$PROJECT_ID/cloud-run-source-deploy/$REPO_NAME/personal-portfolio:$COMMIT_SHA
+  - id: deploy
+    name: gcr.io/google.com/cloudsdktool/cloud-sdk:slim
+    entrypoint: gcloud
+    args:
+      - run
+      - deploy
+      - personal-portfolio
+      - --image
+      - us-west1-docker.pkg.dev/$PROJECT_ID/cloud-run-source-deploy/$REPO_NAME/personal-portfolio:$COMMIT_SHA
+      - --region
+      - us-west1
+      - --quiet
+images:
+  - us-west1-docker.pkg.dev/$PROJECT_ID/cloud-run-source-deploy/$REPO_NAME/personal-portfolio:$COMMIT_SHA
+options:
+  logging: CLOUD_LOGGING_ONLY
