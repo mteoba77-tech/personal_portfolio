@@ -78,3 +78,8 @@ I added 3 pictures for the Showcase Page. I need to create a branch and a pull r
 ## 2026-11-08 05:45 UTC
 
 i need to create a new branch and a new pull request to add the picture Badge,PNG
+
+## 2026-11-08 06:05 UTC
+
+whwn I submit a test entry on the contact page, I get this error Application error: a server-side exception has occurred while loading personal-portfolio-143312829237.us-west1.run.app (see the server logs for more information).
+Digest: 1607138378
