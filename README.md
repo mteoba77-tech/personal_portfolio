@@ -54,7 +54,10 @@ All page content lives in the `content/` folder. Edit these in VS Code and save 
 
 **Images:** put files in `public/images/` and refer to them as `/images/<file name>`.
 
-**Profile photo:** download your LinkedIn picture (LinkedIn image links expire, so don't link to them directly), save it as `public/images/profile.jpg`, and set `"photo": "/images/profile.jpg"` in `profile.json`.
+**Profile photo:** the homepage photo is `public/images/profile.jpg`, and `profile.json` points to it with `"photo": "/images/profile.jpg"`. Files in `public/` are built into the app, so the photo works wherever the app runs (your computer, Docker, Cloud Run) without depending on an outside link.
+- To change it, replace `public/images/profile.jpg` with a new photo of the same name, then commit and push.
+- Keep it small. Phone photos are often 3 MB or more; about 800 px on the longest side is plenty. Make sure it's upright, and remove camera info such as location before you commit it.
+- Don't link to a LinkedIn image URL, because those links expire. If you change the photo on the admin page, enter a path like `/images/profile.jpg`.
 
 **Colors:** the whole theme is set in one place — the `@theme` block at the top of `src/app/globals.css`.
 

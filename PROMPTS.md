@@ -46,3 +46,19 @@ what are steps 3-5
 ## 2026-11-08 01:35 UTC
 
 (pasted: nano editor open on .git/COMMIT_EDITMSG for branch fix_cloud_build_deploy)
+
+## 2026-11-08 01:45 UTC
+
+where can I find the admin password I set for the admin page
+
+## 2026-11-08 01:55 UTC
+
+now it says incorrect password
+
+## 2026-11-08 02:05 UTC
+
+I want the photo for the homepage stored in the program or somewhere it can be accessed no matter where the app is deployed'
+
+## 2026-11-08 02:15 UTC
+
+I added the profile.jkpg update the readme file

@@ -3,7 +3,7 @@
   "title": "Your Current Job Title",
   "company": "Your Company",
   "location": "City, State",
-  "photo": "/images/profile.svg",
+  "photo": "/images/profile.jpg",
   "bio": "A short introduction about who you are, what you do, and what drives you. Edit this in content/profile.json or on the admin page.",
   "email": "mteoba77@yahoo.com",
   "linkedin": "https://www.linkedin.com/in/your-profile",
