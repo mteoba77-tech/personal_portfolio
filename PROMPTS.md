@@ -26,3 +26,7 @@ Can I test this locally before commit?
 ## 2026-11-07 23:15 UTC
 
 help me fix this: (pasted output of `git add .` / `git commit` / `git push -u origin portfolio_app` run from `~`, failing with embedded-repo warnings, "does not have a commit checked out", and "src refspec portfolio_app does not match any")
+
+## 2026-11-08 00:30 UTC
+
+my App gets rhis error when deploying from google cloud gcloud run services update personal-portfolio --memory=1Gi --region=us-west1

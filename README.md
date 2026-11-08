@@ -114,7 +114,8 @@ The `Dockerfile` builds a small production image. The server listens on the `POR
 
 1. Push this project to a GitHub repository.
 2. In the Cloud Console, go to **Cloud Run → Deploy container → Service → Continuously deploy from a repository**, connect GitHub, and pick the repo and branch.
-3. Build type: **Dockerfile** (path `/Dockerfile`).
+3. Build type: **Dockerfile** (path `/Dockerfile`, context `/`). Don't choose Buildpacks. Buildpacks ignore the Dockerfile and run `next start`, which uses much more memory and can exceed Cloud Run's 512 MiB limit.
+   To check an existing trigger, run `gcloud builds triggers list --region=YOUR_REGION`. If the build step shows `gcr.io/buildpacks/builder`, edit the trigger in **Cloud Build → Triggers** and set Configuration to **Dockerfile**.
 4. Turn on **Allow unauthenticated invocations** so the public can see the site.
 5. Under **Variables & Secrets**, add:
    - Environment variables: `USE_FIRESTORE=true`, `SMTP_HOST=smtp.gmail.com`, `SMTP_PORT=465`, `SMTP_USER=you@gmail.com`, `CONTACT_TO_EMAIL=mteoba77@yahoo.com`
