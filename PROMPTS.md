@@ -70,3 +70,11 @@ My picture is not showing in the Homepage
 ## 2026-11-08 05:20 UTC
 
 I added 3 pictures for the Showcase Page. I need to create a branch and a pull request to github
+
+## 2026-11-08 05:30 UTC
+
+(pasted: `gh pr create` output ending in "pull request create failed: GraphQL: N")
+
+## 2026-11-08 05:45 UTC
+
+i need to create a new branch and a new pull request to add the picture Badge,PNG
